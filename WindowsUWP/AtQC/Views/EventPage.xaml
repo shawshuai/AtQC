@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="AtQC.Views.EventPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <Image x:Name="event_page_hint_image" Height="450" VerticalAlignment="Top" Margin="100" Source="/Assets/View/calendar.png"/>
+            <TextBlock Name="event_page_hint" Text="种种精彩，都已就绪。请您稍后再来！" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,150" FocusVisualPrimaryBrush="#FF6C63FF" FocusVisualSecondaryBrush="#FF6C63FF" Foreground="#FF6C63FF"/>
+            <!--
+                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.
+            -->
+            
+        </Grid>
+    </Grid>
+</Page>

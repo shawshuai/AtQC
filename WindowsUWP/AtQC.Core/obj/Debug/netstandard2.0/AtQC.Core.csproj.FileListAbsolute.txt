@@ -1,0 +1,8 @@
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\bin\Debug\netstandard2.0\AtQC.Core.deps.json
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\bin\Debug\netstandard2.0\AtQC.Core.dll
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\bin\Debug\netstandard2.0\AtQC.Core.pdb
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\obj\Debug\netstandard2.0\AtQC.Core.AssemblyInfoInputs.cache
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\obj\Debug\netstandard2.0\AtQC.Core.AssemblyInfo.cs
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\obj\Debug\netstandard2.0\AtQC.Core.dll
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\obj\Debug\netstandard2.0\AtQC.Core.pdb
+C:\Users\shaws\source\repos\AtQC\AtQC.Core\obj\Debug\netstandard2.0\AtQC.Core.csprojAssemblyReference.cache

@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="AtQC.Views.StatusPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid x:Name="StatusContentArea" Margin="{StaticResource MediumLeftRightMargin}">
+
+        <Grid Name="Content" Margin="100,75">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75" />
+                <RowDefinition Height="75" />
+                <RowDefinition Height="75" />
+                <RowDefinition Height="75" />
+                <RowDefinition Height="75" />
+            </Grid.RowDefinitions>
+
+            <TextBlock
+            Text="冷水"
+            FontSize="35"
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0,0,20,0"
+            VerticalAlignment="Center"/>
+            <ProgressRing
+            Name="water_processing"
+            Height="40"
+            Width="40"
+            IsActive="True"
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="10"
+            VerticalAlignment="Center"/>
+            <Image Name="water_status_icon" Height="40" Grid.Row="0" Grid.Column="1" />
+            <TextBlock Name="water_status" Text="数据刷新中..." Width="Auto" FontSize="35" Grid.Row="0" Grid.Column="3" Margin="20,0,0,0" VerticalAlignment="Center"/>
+
+            <TextBlock Name="status_hotwater" Text="热水" FontSize="35" Grid.Row="1" Grid.Column="0" Margin="0,0,20,0" VerticalAlignment="Center"/>
+            <ProgressRing Name="hotwater_processing" Height="40" Width="40" IsActive="True" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Name="hotwater_status" Text="数据刷新中..." Width="Auto" FontSize="35" Grid.Row="1" Grid.Column="3" Margin="20,0,0,0" VerticalAlignment="Center"/>
+            <Image Name="hotwater_status_icon" Height="40" Grid.Row="1" Grid.Column="1" />
+
+            <TextBlock Name="status_election" Text="电力" FontSize="35" Grid.Row="2" Grid.Column="0" Margin="0,0,20,0" VerticalAlignment="Center"/>
+            <ProgressRing Name="election_processing" Height="40" Width="40" IsActive="True" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Name="election_status" Text="数据刷新中..." Width="Auto" FontSize="35" Grid.Row="2" Grid.Column="3" Margin="20,0,0,0" VerticalAlignment="Center"/>
+            <Image Name="election_status_icon" Height="40" Grid.Row="2" Grid.Column="1" />
+
+            <TextBlock Name="status_network" Text="网络" FontSize="35" Grid.Row="3" Grid.Column="0" Margin="0,0,20,0" VerticalAlignment="Center"/>
+            <ProgressRing Name="network_processing" Height="40" Width="40" IsActive="True" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Name="network_status" Text="数据刷新中..." Width="Auto" FontSize="35" Grid.Row="3" Grid.Column="3" Margin="20,0,0,0" VerticalAlignment="Center"/>
+            <Image Name="network_status_icon" Height="40" Grid.Row="3" Grid.Column="1" />
+
+            <Button x:Name="refresh" Content="刷新" Tag="刷新" Height="50" Width="90" Background="#3327E37C" Foreground="#FF1EF8D0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+
+        </Grid>
+        <Grid Name="offline_hint_area" Visibility="Collapsed">
+            <Image Name="image" Height="350" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Source="/Assets/View/offline.png"/>
+            <TextBlock Name="error_hint" Text="无法连接到网络，请稍后再试。" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,300" FontSize="35"/>
+        </Grid>
+
+    </Grid>
+</Page>

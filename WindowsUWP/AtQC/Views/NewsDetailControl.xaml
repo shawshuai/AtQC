@@ -1,0 +1,72 @@
+﻿<UserControl
+    x:Class="AtQC.Views.NewsDetailControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <ScrollViewer
+        Name="ForegroundElement"
+        Padding="{StaticResource DetailPageMargin}"
+        HorizontalAlignment="Stretch"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        VerticalScrollMode="Enabled">
+        <StackPanel HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <FontIcon
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="48"
+                    Glyph="{x:Bind MasterMenuItem.Symbol, Mode=OneWay}" />
+                <TextBlock
+                    Margin="{StaticResource SmallLeftMargin}"
+                    VerticalAlignment="Center"
+                    Text="{x:Bind MasterMenuItem.Company, Mode=OneWay}"
+                    Style="{ThemeResource TitleTextBlockStyle}" />
+            </StackPanel>
+            <StackPanel Name="block" Padding="0,15,0,0">
+                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="新闻标题" />
+                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind MasterMenuItem.Status, Mode=OneWay}" />
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="时间" />
+                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind MasterMenuItem.OrderDate, Mode=OneWay}" />
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="短评" />
+                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind MasterMenuItem.Company, Mode=OneWay}" />
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="摘要" />
+                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind MasterMenuItem.ShipTo, Mode=OneWay}" />
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="总数" />
+                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind MasterMenuItem.OrderTotal, Mode=OneWay}" />
+
+                <TextBlock
+                    Margin="{StaticResource MediumTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="1" />
+                <TextBlock Style="{StaticResource DetailBodyStyle}" Text="本网讯（通讯员：吴超） 11月23日，第十一届全国大学生广告艺术大赛（以下简称：大广赛）学科竞赛成果展示盛典在全国政协礼堂隆重举行。本届大广赛吸引了中国传媒大学、清华大学等1504所高校参与，参赛大学生逾101万人次，收到参赛作品404662组，共计90余万件，参赛作品数量创历年之最。武汉晴川学院选送的作品《谜》在众多参赛作品中脱颖而出，荣获&quot;视频类微电影广告&quot;全国二等奖。
+                           大广赛由教育部高等教育指导委员会、教育部高等学校新闻传播学类专业教学指导委员会、中国高等教育学会广告教育专业委员会共同主办，秉承&quot;促进教改、启迪智慧、强化能力、提高素质&quot;的竞赛宗旨，号召将企业命题引入教学，真题真做。作为国家级A类赛事，大广赛成绩已成为&quot;一流本科专业建设&quot;评审的重要指标。" />
+
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Text="2" />
+                <TextBlock
+                    Margin="{StaticResource MediumBottomMargin}"
+                    Style="{StaticResource DetailBodyStyle}"
+                    Text="武汉晴川学院传媒艺术学院17级广播电视编导专业吴超、邵峰、张瑞瑶、米芸涵、董太洋等同学共同完成的作品《谜》，以企业真实诉求为切入点，深入洞察目标人群痛点，巧用产品性能，辅以熟练的视听表现手法，在指导老师李梦寒的带领下，耗时月余精心创作，成功地将创意影像化，打动了命题企业及大赛专业评委的心。
+                    近年来，武汉晴川学院坚持&quot;以赛促教，以赛促学的&quot;应用型人才培养模式，学生综合素质稳步提高，人才培养质量屡获社会肯定。其中，传媒艺术学院学子相继在全国大学生朗诵大会、全国大学生广告艺术大赛、湖北省大学生微影PK赛等专业赛事中取得优异成绩。 晴川师生积极投身各类赛事和实践活动，过硬的专业素养及良好的精神风貌在创意的巅峰之战上得以展现，为晴川增添了新的光彩。" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
