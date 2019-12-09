@@ -1,2 +1,2 @@
-MainPackage=C:\Users\shaws\source\repos\AtQC\AtQC\bin\x86\Release\AtQC_0.0.1.0_x86.msix
-SymbolPackage=C:\Users\shaws\source\repos\AtQC\AtQC\obj\x86\Release\Symbols\AtQC_0.0.1.0_x86.appxsym
+MainPackage=C:\Users\shaws\source\repos\AtQC\AtQC\bin\x86\Release\AtQC_0.0.2.0_x86.msix
+SymbolPackage=C:\Users\shaws\source\repos\AtQC\AtQC\obj\x86\Release\Symbols\AtQC_0.0.2.0_x86.appxsym

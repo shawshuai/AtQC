@@ -4,6 +4,7 @@ using AtQC.ViewModels;
 
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Services.Store.Engagement;
 
 namespace AtQC.Views
 {
@@ -15,6 +16,9 @@ namespace AtQC.Views
         public SettingsPage()
         {
             InitializeComponent();
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("settingsPageLoaded");
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)

@@ -5,6 +5,7 @@ using AtQC.ViewModels;
 using MySql.Data.MySqlClient;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
+using Microsoft.Services.Store.Engagement;
 
 namespace AtQC.Views
 {
@@ -16,6 +17,9 @@ namespace AtQC.Views
         {
             InitializeComponent();
             Refresh_Page();
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("statusPageLoaded");
         }
 
         public void Refresh_Page()
@@ -40,7 +44,7 @@ namespace AtQC.Views
                 network_status_icon.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 water_status_icon.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 hotwater_status_icon.Visibility = Windows.UI.Xaml.Visibility.Visible;
-                string M_str_sqlcon = "server=【将此处替换为数据库服务器地址】;user id=【将此处替换为用户ID】;password=【将此处替换为数据库密码】;database=【将此处替换为数据库名称】";
+                string M_str_sqlcon = "数据库链接语句";
                 for (int i = 1; i <= 4; i++)
                 {
                     MySqlConnection mysqlcon = new MySqlConnection(M_str_sqlcon);
@@ -113,6 +117,14 @@ namespace AtQC.Views
                 img = new BitmapImage(new Uri("ms-appx:///Assets/icon/warning.png"));
             }
             return img;
+        }
+
+        private void refresh_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            Refresh_Page();
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("userRefreshedStatusPage");
         }
     }
 }

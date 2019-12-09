@@ -56,7 +56,7 @@
             <TextBlock Name="network_status" Text="数据刷新中..." Width="Auto" FontSize="35" Grid.Row="3" Grid.Column="3" Margin="20,0,0,0" VerticalAlignment="Center"/>
             <Image Name="network_status_icon" Height="40" Grid.Row="3" Grid.Column="1" />
 
-            <Button x:Name="refresh" Content="刷新" Tag="刷新" Height="50" Width="90" Background="#3327E37C" Foreground="#FF1EF8D0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+            <Button x:Name="refresh" Content="刷新" Tag="刷新" Height="50" Width="90" Background="#3327E37C" Foreground="#FF1EF8D0" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,13,0,0" Click="refresh_Click"/>
 
         </Grid>
         <Grid Name="offline_hint_area" Visibility="Collapsed">

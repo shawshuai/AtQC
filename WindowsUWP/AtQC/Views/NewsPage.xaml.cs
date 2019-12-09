@@ -4,6 +4,7 @@ using AtQC.ViewModels;
 
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Microsoft.Services.Store.Engagement;
 
 namespace AtQC.Views
 {
@@ -15,6 +16,9 @@ namespace AtQC.Views
         {
             InitializeComponent();
             Loaded += NewsPage_Loaded;
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("newsPageLoaded");
         }
 
         private async void NewsPage_Loaded(object sender, RoutedEventArgs e)

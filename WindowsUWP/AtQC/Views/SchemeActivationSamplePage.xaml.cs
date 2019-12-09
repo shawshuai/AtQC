@@ -5,6 +5,7 @@ using AtQC.ViewModels;
 
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Services.Store.Engagement;
 
 namespace AtQC.Views
 {
@@ -19,6 +20,9 @@ namespace AtQC.Views
         public SchemeActivationSamplePage()
         {
             InitializeComponent();
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("deepLinkPageLoaded");
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

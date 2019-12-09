@@ -1,0 +1,7 @@
+MainPackage=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_ARM.msix
+SymbolPackage=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0\AtQC_0.0.2.0_ARM.appxsym
+ResourcePack=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_language-zh-hans.msix
+ResourcePack=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_scale-100.msix
+ResourcePack=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_scale-125.msix
+ResourcePack=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_scale-150.msix
+ResourcePack=C:\Users\shaws\source\repos\AtQC\AtQC\bin\ARM\Release\Upload\AtQC_0.0.2.0_scale-400.msix

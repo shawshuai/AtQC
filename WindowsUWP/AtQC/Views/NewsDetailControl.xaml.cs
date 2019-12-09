@@ -11,13 +11,13 @@ namespace AtQC.Views
     {
         //public News
 
-        public SampleOrder MasterMenuItem
+        public NewsDetail MasterMenuItem
         {
-            get { return GetValue(MasterMenuItemProperty) as SampleOrder; }
+            get { return GetValue(MasterMenuItemProperty) as NewsDetail; }
             set { SetValue(MasterMenuItemProperty, value); }
         }
 
-        public static readonly DependencyProperty MasterMenuItemProperty = DependencyProperty.Register("MasterMenuItem", typeof(SampleOrder), typeof(NewsDetailControl), new PropertyMetadata(null, OnMasterMenuItemPropertyChanged));
+        public static readonly DependencyProperty MasterMenuItemProperty = DependencyProperty.Register("MasterMenuItem", typeof(NewsDetail), typeof(NewsDetailControl), new PropertyMetadata(null, OnMasterMenuItemPropertyChanged));
 
         public NewsDetailControl()
         {

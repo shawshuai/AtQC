@@ -13,17 +13,17 @@ namespace AtQC.ViewModels
 {
     public class NewsViewModel : Observable
     {
-        private SampleOrder _selected;
+        private NewsDetail _selected;
 
         //private News _selected;  //shawshuai
 
-        public SampleOrder Selected
+        public NewsDetail Selected
         {
             get { return _selected; }
             set { Set(ref _selected, value); }
         }
 
-        public ObservableCollection<SampleOrder> SampleItems { get; private set; } = new ObservableCollection<SampleOrder>();
+        public ObservableCollection<NewsDetail> SampleItems { get; private set; } = new ObservableCollection<NewsDetail>();
 
         public NewsViewModel()
         {

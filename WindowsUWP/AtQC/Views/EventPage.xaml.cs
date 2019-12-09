@@ -3,6 +3,7 @@
 using AtQC.ViewModels;
 
 using Windows.UI.Xaml.Controls;
+using Microsoft.Services.Store.Engagement;
 
 namespace AtQC.Views
 {
@@ -13,6 +14,9 @@ namespace AtQC.Views
         public EventPage()
         {
             InitializeComponent();
+
+            StoreServicesCustomEventLogger logger = StoreServicesCustomEventLogger.GetDefault();
+            logger.Log("eventPageLoaded");
         }
     }
 }
